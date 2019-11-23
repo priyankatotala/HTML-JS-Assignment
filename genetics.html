@@ -2,10 +2,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Title of the website-->
 <title>Biotechnology Curriculum</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -13,15 +15,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
+
 <body>
 
-
-
 <header>
+  <!-- LOGO-->
   <a href="index.html"><img src="logo.png" alt="logo" style="float: left;height: 70px; "></a>
   <h2><a style="color: white;" href="index.html">Biotechnology Curriculum</a></h2>
+
 </header>
-  <nav>
+<!-- Responsive navigational bar -->
+  <nav >
+    <div  class="topnav" >
+      <!-- Open & close of Hamburger menu using javascript -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction2()">
+    <i class="fa fa-bars"></i>
+  </a>
+    <div   id="myTopnav">
     <ul>
       <li><a href="cellbiology.html" target="_blank">Cell Biology</a></li>
       <li><a href="biochemistry.html" target="_blank">Biochemistry</a></li>
@@ -29,8 +39,13 @@
        
       <li><a href="microbiology.html" target="_blank">MicroBiology</a></li>
       <li><a href="genetics.html" target="_blank">Genetics</a></li>
+     
     </ul>
+  </div>
+    </div>
   </nav>
+  
+ <!-- Main content of the page-->
 <section>
   
   
@@ -42,10 +57,27 @@
     <p>The chromosomes that decide the sex of the baby are called sex chromosomes. The mother’s egg always contributes an X, while the father’s sperm provides either an X or a Y. An XX pairing means a girl, while an XY pairing means a boy. As well as determining sex, these chromosomes carry genes that control other body functions. There are many genes located on the X chromosome, but only a few on the Y chromosome. </p>
   </article>
 </section>
-
+<!-- Footer of the website-->
 <footer>
  <p>Copyrights Reserved - 2019</p>
 </footer>
+
+<!--Javascript functions-->
+
+
+<script>
+//Open & close of Hamburger menu using javascript
+function myFunction2() {
+  var x = document.getElementById("myTopnav");
+  
+
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 
 </body>
 </html>

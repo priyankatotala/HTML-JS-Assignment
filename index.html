@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Title of the website-->
 <title>Biotechnology Curriculum</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,16 +20,19 @@
 <body>
 
 <header>
+	<!-- LOGO-->
 	<a href="index.html"><img src="logo.png" alt="logo" style="float: left;height: 70px; "></a>
   <h2><a style="color: white;" href="index.html">Biotechnology Curriculum</a></h2>
 
 </header>
+<!-- Responsive navigational bar -->
   <nav >
   	<div  class="topnav" >
+  		<!-- Open & close of Hamburger menu using javascript -->
   		<a href="javascript:void(0);" class="icon" onclick="myFunction2()">
     <i class="fa fa-bars"></i>
   </a>
-  		<div   id="myTopnav">
+  	<div   id="myTopnav">
     <ul>
       <li><a href="cellbiology.html" target="_blank">Cell Biology</a></li>
       <li><a href="biochemistry.html" target="_blank">Biochemistry</a></li>
@@ -38,19 +42,21 @@
       <li><a href="genetics.html" target="_blank">Genetics</a></li>
      
     </ul>
-</div>
+	</div>
     </div>
   </nav>
+
+ <!-- Main content of the homepage-->
 <section>
-  
-  
-  <article id="demo">
+     <article id="demo">
     <h1>What is Biotechnology?</h1>
     <p>Biotechnology is a broad term for a group of technologies based on the application of biological processes. It is used to make or modify foodstuffs and medicines, reduce wastes and environmental impacts and create renewable energy sources.</p>
 
-<p>Modern biotechnology is the term used to describe a range of processes and techniques especially at the molecular level.</p>
+	<p>Modern biotechnology is the term used to describe a range of processes and techniques especially at the molecular level.</p>
 
-<p>Examples of biotechnology applications of particular interest to the department include cell culture, genomics, molecular marker-assisted breeding, cloning, bioprocessing and diagnostic testing as well as gene technology (genetic modification).</p>
+	<p>Examples of biotechnology applications of particular interest to the department include cell culture, genomics, molecular marker-assisted breeding, cloning, bioprocessing and diagnostic testing as well as gene technology (genetic modification).</p>
+	
+	<!-- Buttons to view article with background image and w ithout bg image using javascript functions-->
     <button type="button" onclick="myFunction()">View with background image</button>
     <button type="button" onclick="myFunction1()">View without background image</button>
 
@@ -58,11 +64,15 @@
 
   </article>
 </section>
-
+<!-- Footer of the website-->
 <footer>
   <p>Copyrights Reserved - 2019</p>
 </footer>
+
+
+<!--Javascript functions-->
 <script>
+	//Javascript functions to change background of article
 function myFunction() {
   document.getElementById("demo").style.backgroundImage = "url('images/bio1.jpg')";
   document.getElementById("demo").style.border = "none";
@@ -72,6 +82,7 @@ function myFunction1() {
   document.getElementById("demo").style.backgroundImage = "none";
   document.getElementById("demo").style.border = "thick solid blue";
 }
+	//Open & close of Hamburger menu using javascript
 function myFunction2() {
   var x = document.getElementById("myTopnav");
   
@@ -82,13 +93,6 @@ function myFunction2() {
     x.style.display = "block";
   }
 }
-
-
-
-
-
-
-
 </script>
 </body>
 </html>

@@ -2,10 +2,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Title of the website-->
 <title>Biotechnology Curriculum</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -13,16 +15,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
+
 <body>
 
-
-
 <header>
+  <!-- LOGO-->
   <a href="index.html"><img src="logo.png" alt="logo" style="float: left;height: 70px; "></a>
   <h2><a style="color: white;" href="index.html">Biotechnology Curriculum</a></h2>
 
 </header>
-  <nav>
+<!-- Responsive navigational bar -->
+  <nav >
+    <div  class="topnav" >
+      <!-- Open & close of Hamburger menu using javascript -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction2()">
+    <i class="fa fa-bars"></i>
+  </a>
+    <div   id="myTopnav">
     <ul>
       <li><a href="cellbiology.html" target="_blank">Cell Biology</a></li>
       <li><a href="biochemistry.html" target="_blank">Biochemistry</a></li>
@@ -30,8 +39,13 @@
        
       <li><a href="microbiology.html" target="_blank">MicroBiology</a></li>
       <li><a href="genetics.html" target="_blank">Genetics</a></li>
+     
     </ul>
+  </div>
+    </div>
   </nav>
+  
+  
 <section>
   
   
@@ -41,10 +55,96 @@
     <p>The discipline particularly seeks to understand the molecular basis of genetic processes; molecular biologists map the location of genes on specific chromosomes, associate these genes with particular characters of an organism, and use recombinant DNA technology to isolate, sequence, and modify specific genes. </p>
   </article>
 </section>
+<!-- Section for image gallery-->
+<section>
+  
+  <h2 style="text-align:center">Molecular biology image gallery</h2>
 
+<div class="row">
+  <div class="column">
+    <img src="images/mb1.jpg" style="width:100%" onclick="openlb();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/mb2.jpg" style="width:100%" onclick="openlb();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/mb3.jpg" style="width:100%;height:130px;" onclick="openlb();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/mb4.jpg" style="width:100%;height:130px;" onclick="openlb();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="mylb" class="lb">
+  <span class="close cursor" onclick="closelb()">&times;</span>
+  <div class="lb-content">
+
+    <div class="slider">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/mb1.jpg" style="width:100%">
+    </div>
+
+    <div class="slider">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/mb2.jpg" style="width:100%">
+    </div>
+
+    <div class="slider">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/mb3.jpg" style="width:100%">
+    </div>
+    
+    <div class="slider">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/mb4.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="gallerytitle">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="images/mb1.jpg" style="width:100%;" onclick="currentSlide(1)" alt="Helical Structure">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/mb2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Molcules">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/mb3.jpg" style="width:100%;height:130px;" onclick="currentSlide(3)" alt="Atomic structure">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/mb4.jpg" style="width:100%;height:130px;" onclick="currentSlide(4)" alt="Lab instruments">
+    </div>
+  </div>
+</div>
+<br>
+</section>
+<!-- Footer of the website-->
 <footer>
-  <p>Copyrights Reserved - 2019</p>
+ <p>Copyrights Reserved - 2019</p>
 </footer>
+
+<!--Javascript functions-->
+
+<script type="text/javascript" src="external.js"></script>
+
+<script>
+//Open & close of Hamburger menu using javascript
+function myFunction2() {
+  var x = document.getElementById("myTopnav");
+  
+
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 
 </body>
 </html>
