@@ -86,3 +86,37 @@ h1{
 p{
   font-size: 16px;
 }
+
+/*Added on 23-nov-2019  for responsive functional navigational bar*/
+
+
+.icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+   
+   a.icon {
+    text-align: center;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .responsive {position: relative;}
+  .responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav #myTopnav {
+  display: none;
+}
+
+}
